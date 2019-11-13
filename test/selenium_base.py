@@ -26,7 +26,7 @@ class PythonOrgSearch(unittest.TestCase):
         driver.get("https://www.baidu.com/")
         driver.implicitly_wait(10)
         print(f'title is: {driver.title}')
-        assert "百度" in driver.title
+        assert "百度" in driver.title, 'not right page!'
         elem = driver.find_element_by_name("wd")
         elem.clear()
         elem.send_keys("Yiheng")

@@ -44,10 +44,9 @@ class LookData:
         curr_count = 0
         max_request = 0
         while True:
-            time.sleep(7)
             wd.find_element_by_tag_name('body').send_keys(Keys.HOME)
             wd.find_element_by_tag_name('body').send_keys(Keys.END)
-            time.sleep(3)
+            time.sleep(7)
             link_elems = wd.find_elements_by_css_selector("a[href*=%s]" % 'live\\?')
             elems_count = len(link_elems)
             if curr_count < elems_count:
@@ -75,5 +74,6 @@ if __name__ == '__main__':
     worker = LookData(base_url)
     worker.landing()
     time.sleep(3)
-    links = worker.get_hot(300)
-    worker.wandering(links)
+    links = worker.get_hot(200)
+    while True:
+        worker.wandering(links)

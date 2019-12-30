@@ -46,7 +46,7 @@ class LookData:
         while True:
             wd.find_element_by_tag_name('body').send_keys(Keys.HOME)
             wd.find_element_by_tag_name('body').send_keys(Keys.END)
-            time.sleep(7)
+            time.sleep(10)
             link_elems = wd.find_elements_by_css_selector("a[href*=%s]" % 'live\\?')
             elems_count = len(link_elems)
             if curr_count < elems_count:
@@ -63,10 +63,19 @@ class LookData:
 
     def wandering(self, links: list):
         wd = self.wd
+        links.insert(0, 'https://iplay.163.com/live?id=246385145')
+        links.insert(0, 'https://iplay.163.com/live?id=257471368')
+        links.insert(0, 'https://iplay.163.com/live?id=148834749')
         for link in links:
             print(f'request link {link}')
             wd.get(link)
-            time.sleep(2)
+            try:
+                wd.find_element_by_xpath('//input[@placeholder="跟主播聊聊吧~"]').send_keys('喵~晚上好~')
+                time.sleep(2)
+                wd.find_element_by_xpath('//div[text()="发 送"]').click()
+                time.sleep(5)
+            except Exception as re:
+                print(re)
 
 
 if __name__ == '__main__':
@@ -74,6 +83,6 @@ if __name__ == '__main__':
     worker = LookData(base_url)
     worker.landing()
     time.sleep(3)
-    links = worker.get_hot(200)
     while True:
+        links = worker.get_hot(300)
         worker.wandering(links)

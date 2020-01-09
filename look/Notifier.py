@@ -10,19 +10,14 @@
 
 import time
 from datetime import datetime
-from selenium import webdriver
-
-from selenium.webdriver.chrome.options import Options
+from utils import common_utils
 
 
 class Notifier:
 
     def __init__(self, room_id):
         self.room_id = room_id
-
-        chrome_options = Options()
-        chrome_options.add_argument('--headless')
-        self.wd = webdriver.Chrome(options=chrome_options)
+        self.wd = common_utils.init_driver()
         self.wd.implicitly_wait(5)
 
     def watch(self):

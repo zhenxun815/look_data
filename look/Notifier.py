@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Description: 
-# @File: notifier.py
+# @File: Notifier.py
 # @Project: look_data
 # @Author: Yiheng
 # @Email: GuoYiheng89@gmail.com

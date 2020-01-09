@@ -12,13 +12,13 @@
 # https://iplay.163.com/live?id=191828770&position=8
 import time
 
-from selenium import webdriver
+from utils import common_utils
 from selenium.webdriver.common.keys import Keys
 
 
 class LookData:
     def __init__(self, base_url):
-        self.wd = webdriver.Chrome()
+        self.wd = self.wd = common_utils.init_driver(headless=False)
         self.wd.implicitly_wait(10)
         self.base_url = base_url
 
@@ -79,8 +79,8 @@ class LookData:
 
 
 if __name__ == '__main__':
-    base_url = 'https://iplay.163.com/'
-    worker = LookData(base_url)
+    host_url = 'https://iplay.163.com/'
+    worker = LookData(host_url)
     worker.landing()
     time.sleep(3)
     while True:

@@ -13,8 +13,12 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-def init_driver(driver_path=None, headless=True):
+def init_driver(headless=True):
     """
+
+    yum install google-chrome-stable
+    yum install chromedriver
+
     ini the chrome webdriver
     :param driver_path:
     :param headless:
@@ -22,18 +26,13 @@ def init_driver(driver_path=None, headless=True):
     """
     sys_name = platform.system()
     chrome_options = Options()
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument("--disable-gpu")
     if headless:
         chrome_options.add_argument('--headless')
 
-    if 'Windows' == sys_name:
-        print('init chrome webdriver on Windows...')
-        return webdriver.Chrome(options=chrome_options)
-    elif 'Linux' == sys_name and driver_path:
-        print('init chrome webdriver on Linux...')
-        return webdriver.Chrome(executable_path=driver_path, options=chrome_options)
-    else:
-        print('init chrome webdriver fail...')
-        return None
+    print(f'init chrome webdriver on {sys_name}...')
+    return webdriver.Chrome(options=chrome_options)
 
 
 if __name__ == '__main__':

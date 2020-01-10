@@ -10,6 +10,8 @@
 
 import time
 from datetime import datetime
+
+from notify import sms
 from utils import common_utils
 
 
@@ -22,20 +24,27 @@ class Notifier:
 
     def watch(self):
         room_url = f'https://iplay.163.com/live?id={self.room_id}'
-        live_flag = False
+        has_notified = False
 
         self.wd.get(room_url)
         nick_name = self.wd.find_element_by_xpath('//div[contains(@class,"nickname")]').text
-        while not live_flag:
+        while True:
             try:
                 self.wd.refresh()
                 span = self.wd.find_element_by_xpath('//div/span[contains(text(), "- 直播间已关闭 -")]')
                 print(f'{datetime.today()} {nick_name} {span.text}')
-                time.sleep(5)
+                if has_notified:
+                    has_notified = False
+
             except Exception as ex:
-                live_flag = True
-                print(ex)
                 print(f'{nick_name} live start')
+                if not has_notified:
+                    print(f'send message...')
+                    sms.send('18600245065', 'aling')
+                    has_notified = True
+                # print(ex)
+
+            time.sleep(5)
 
 
 if __name__ == '__main__':

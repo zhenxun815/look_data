@@ -43,7 +43,7 @@ def waiting_element(driver: WebDriver, element_id: str, max_wait=30, interval=1)
     :param interval:
     :return:
     """
-    WebDriverWait(driver, timeout=max_wait, poll_frequency=interval, ignored_exceptions=True).until(
+    WebDriverWait(driver, timeout=max_wait, poll_frequency=interval).until(
             is_element_present(element_id))
     return driver.find_element_by_id(element_id)
 
@@ -59,5 +59,5 @@ def waiting_elements(driver: WebDriver, element_id: str, max_wait=30, interval=5
     :return:
     """
     WebDriverWait(driver, timeout=max_wait,
-                  poll_frequency=interval, ignored_exceptions=True).until(is_elements_present(element_id))
+                  poll_frequency=interval).until(is_elements_present(element_id))
     return driver.find_elements_by_id(element_id)

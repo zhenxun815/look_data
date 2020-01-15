@@ -33,25 +33,31 @@ def is_elements_present(element_id: str):
     return expected_conditions.presence_of_all_elements_located(locator)
 
 
-def waiting_element(driver: WebDriver, element_id: str, max_wait=30):
+def waiting_element(driver: WebDriver, element_id: str, max_wait=30, interval=1):
     """
-    waiting element until it present, default max waiting time is 30 second.
+    waiting element until it present, default max waiting time is 30 seconds,
+    default poll interval is 1 seconds.
     :param driver:
     :param element_id:
     :param max_wait: unit is second
+    :param interval:
     :return:
     """
-    WebDriverWait(driver, max_wait).until(is_element_present(element_id))
+    WebDriverWait(driver, timeout=max_wait, poll_frequency=interval, ignored_exceptions=True).until(
+            is_element_present(element_id))
     return driver.find_element_by_id(element_id)
 
 
-def waiting_elements(driver: WebDriver, element_id: str, max_wait=30):
+def waiting_elements(driver: WebDriver, element_id: str, max_wait=30, interval=5):
     """
-    waiting element until it present, default max waiting time is 30 second.
+    waiting element until it present, default max waiting time is 30 seconds,
+    default poll interval is 5 seconds.
     :param driver:
     :param element_id:
     :param max_wait: unit is second
+    :param interval:
     :return:
     """
-    WebDriverWait(driver, max_wait).until(is_elements_present(element_id))
+    WebDriverWait(driver, timeout=max_wait,
+                  poll_frequency=interval, ignored_exceptions=True).until(is_elements_present(element_id))
     return driver.find_elements_by_id(element_id)

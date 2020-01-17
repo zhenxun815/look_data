@@ -1,146 +1,852 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <hierarchy index="0" class="hierarchy" rotation="0" width="768" height="1184">
-  <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-    <android.widget.LinearLayout index="0" package="com.netease.play" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-      <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-        <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-          <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-            <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/liveContainerFragment" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-              <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" resource-id="com.netease.play:id/liveRecyclerView" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="true" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,0][768,1184]" displayed="true">
-                <android.widget.RelativeLayout index="0" package="com.netease.play" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-                  <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/liveCover" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true" />
-                </android.widget.RelativeLayout>
-              </android.view.View>
-              <android.widget.FrameLayout index="1" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/liveViewerFragment" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-                <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true" />
-                <android.widget.RelativeLayout index="2" package="com.netease.play" class="android.widget.RelativeLayout" text="" resource-id="com.netease.play:id/liveContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-                  <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/chatroomContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,50][768,1072]" displayed="true">
-                    <android.widget.RelativeLayout index="0" package="com.netease.play" class="android.widget.RelativeLayout" text="" resource-id="com.netease.play:id/chatRoomInnerContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,50][768,1072]" displayed="true">
-                      <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" resource-id="com.netease.play:id/chatRecyclerView" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,194][540,1072]" displayed="true">
-                        <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,194][410,297]" displayed="true">
-                          <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[20,194][76,250]" displayed="true" />
-                          <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/layout_content_area" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[90,194][384,297]" displayed="true">
-                            <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="icon 川崎小姐姐_H2R " resource-id="com.netease.play:id/name" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,210][370,240]" displayed="true" />
-                          </android.widget.LinearLayout>
+    <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text=""
+                                checkable="false" checked="false" clickable="false" enabled="true" focusable="false"
+                                focused="false" long-clickable="false" password="false" scrollable="false"
+                                selected="false" bounds="[0,0][768,1184]" displayed="true">
+        <android.widget.LinearLayout index="0" package="com.netease.play" class="android.widget.LinearLayout" text=""
+                                     checkable="false" checked="false" clickable="false" enabled="true"
+                                     focusable="false" focused="false" long-clickable="false" password="false"
+                                     scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
+            <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text=""
+                                        checkable="false" checked="false" clickable="false" enabled="true"
+                                        focusable="false" focused="false" long-clickable="false" password="false"
+                                        scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
+                <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout"
+                                            text="" resource-id="com.netease.play:id/action_bar_root" checkable="false"
+                                            checked="false" clickable="false" enabled="true" focusable="false"
+                                            focused="false" long-clickable="false" password="false" scrollable="false"
+                                            selected="false" bounds="[0,0][768,1184]" displayed="true">
+                    <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout"
+                                                text="" resource-id="android:id/content" checkable="false"
+                                                checked="false" clickable="false" enabled="true" focusable="false"
+                                                focused="false" long-clickable="false" password="false"
+                                                scrollable="false" selected="false" bounds="[0,0][768,1184]"
+                                                displayed="true">
+                        <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                    class="android.widget.FrameLayout" text=""
+                                                    resource-id="com.netease.play:id/liveContainerFragment"
+                                                    checkable="false" checked="false" clickable="false" enabled="true"
+                                                    focusable="false" focused="false" long-clickable="false"
+                                                    password="false" scrollable="false" selected="false"
+                                                    bounds="[0,0][768,1184]" displayed="true">
+                            <android.view.View index="0" package="com.netease.play" class="android.view.View" text=""
+                                               resource-id="com.netease.play:id/liveRecyclerView" checkable="false"
+                                               checked="false" clickable="false" enabled="true" focusable="true"
+                                               focused="true" long-clickable="false" password="false" scrollable="true"
+                                               selected="false" bounds="[0,0][768,1184]" displayed="true">
+                                <android.widget.RelativeLayout index="0" package="com.netease.play"
+                                                               class="android.widget.RelativeLayout" text=""
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="false" focused="false"
+                                                               long-clickable="false" password="false"
+                                                               scrollable="false" selected="false"
+                                                               bounds="[0,0][768,1184]" displayed="true">
+                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/liveCover"
+                                                              checkable="false" checked="false" clickable="false"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[0,0][768,1184]"
+                                                              displayed="true"/>
+                                </android.widget.RelativeLayout>
+                            </android.view.View>
+                            <android.widget.FrameLayout index="1" package="com.netease.play"
+                                                        class="android.widget.FrameLayout" text=""
+                                                        resource-id="com.netease.play:id/liveViewerFragment"
+                                                        checkable="false" checked="false" clickable="false"
+                                                        enabled="true" focusable="false" focused="false"
+                                                        long-clickable="false" password="false" scrollable="false"
+                                                        selected="false" bounds="[0,0][768,1184]" displayed="true">
+                                <android.view.View index="0" package="com.netease.play" class="android.view.View"
+                                                   text="" checkable="false" checked="false" clickable="false"
+                                                   enabled="true" focusable="false" focused="false"
+                                                   long-clickable="false" password="false" scrollable="false"
+                                                   selected="false" bounds="[0,0][768,1184]" displayed="true"/>
+                                <android.widget.RelativeLayout index="2" package="com.netease.play"
+                                                               class="android.widget.RelativeLayout" text=""
+                                                               resource-id="com.netease.play:id/liveContainer"
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="false" focused="false"
+                                                               long-clickable="false" password="false"
+                                                               scrollable="false" selected="false"
+                                                               bounds="[0,0][768,1184]" displayed="true">
+                                    <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                class="android.widget.FrameLayout" text=""
+                                                                resource-id="com.netease.play:id/chatroomContainer"
+                                                                checkable="false" checked="false" clickable="false"
+                                                                enabled="true" focusable="false" focused="false"
+                                                                long-clickable="false" password="false"
+                                                                scrollable="false" selected="false"
+                                                                bounds="[0,50][768,1072]" displayed="true">
+                                        <android.widget.RelativeLayout index="0" package="com.netease.play"
+                                                                       class="android.widget.RelativeLayout" text=""
+                                                                       resource-id="com.netease.play:id/chatRoomInnerContainer"
+                                                                       checkable="false" checked="false"
+                                                                       clickable="false" enabled="true"
+                                                                       focusable="false" focused="false"
+                                                                       long-clickable="false" password="false"
+                                                                       scrollable="false" selected="false"
+                                                                       bounds="[0,50][768,1072]" displayed="true">
+                                            <android.view.View index="0" package="com.netease.play"
+                                                               class="android.view.View" text=""
+                                                               resource-id="com.netease.play:id/chatRecyclerView"
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="true" focused="false"
+                                                               long-clickable="false" password="false" scrollable="true"
+                                                               selected="false" bounds="[0,194][540,1072]"
+                                                               displayed="true">
+                                                <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,194][410,297]" displayed="true">
+                                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                                              class="android.widget.ImageView" text=""
+                                                                              resource-id="com.netease.play:id/avatar"
+                                                                              checkable="false" checked="false"
+                                                                              clickable="true" enabled="true"
+                                                                              focusable="false" focused="false"
+                                                                              long-clickable="true" password="false"
+                                                                              scrollable="false" selected="false"
+                                                                              bounds="[20,194][76,250]"
+                                                                              displayed="true"/>
+                                                    <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                                 class="android.widget.LinearLayout"
+                                                                                 text=""
+                                                                                 resource-id="com.netease.play:id/layout_content_area"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[90,194][384,297]"
+                                                                                 displayed="true">
+                                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="icon 川崎小姐姐_H2R "
+                                                                                 resource-id="com.netease.play:id/name"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,210][370,240]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.LinearLayout>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="1" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,194][281,293]" displayed="true">
+                                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                                              class="android.widget.ImageView" text=""
+                                                                              resource-id="com.netease.play:id/avatar"
+                                                                              checkable="false" checked="false"
+                                                                              clickable="true" enabled="true"
+                                                                              focusable="false" focused="false"
+                                                                              long-clickable="true" password="false"
+                                                                              scrollable="false" selected="false"
+                                                                              bounds="[20,194][76,246]"
+                                                                              displayed="true"/>
+                                                    <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                                 class="android.widget.LinearLayout"
+                                                                                 text=""
+                                                                                 resource-id="com.netease.play:id/layout_content_area"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[90,194][255,293]"
+                                                                                 displayed="true">
+                                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="icon HY-私御 "
+                                                                                 resource-id="com.netease.play:id/name"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,206][241,236]"
+                                                                                 displayed="true"/>
+                                                        <android.widget.TextView index="1" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="新人报道 "
+                                                                                 resource-id="com.netease.play:id/content"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="true" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,248][225,281]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.LinearLayout>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="2" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,313][402,416]" displayed="true">
+                                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                                              class="android.widget.ImageView" text=""
+                                                                              resource-id="com.netease.play:id/avatar"
+                                                                              checkable="false" checked="false"
+                                                                              clickable="true" enabled="true"
+                                                                              focusable="false" focused="false"
+                                                                              long-clickable="true" password="false"
+                                                                              scrollable="false" selected="false"
+                                                                              bounds="[20,313][76,369]"
+                                                                              displayed="true"/>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="4" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,194][349,207]" displayed="true">
+                                                    <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                                 class="android.widget.LinearLayout"
+                                                                                 text=""
+                                                                                 resource-id="com.netease.play:id/layout_content_area"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[90,194][323,207]"
+                                                                                 displayed="true">
+                                                        <android.widget.TextView index="1" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="打劫火箭交出来 "
+                                                                                 resource-id="com.netease.play:id/content"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="true" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,194][309,195]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.LinearLayout>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="5" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,227][410,330]" displayed="true">
+                                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                                              class="android.widget.ImageView" text=""
+                                                                              resource-id="com.netease.play:id/avatar"
+                                                                              checkable="false" checked="false"
+                                                                              clickable="true" enabled="true"
+                                                                              focusable="false" focused="false"
+                                                                              long-clickable="true" password="false"
+                                                                              scrollable="false" selected="false"
+                                                                              bounds="[20,227][76,283]"
+                                                                              displayed="true"/>
+                                                    <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                                 class="android.widget.LinearLayout"
+                                                                                 text=""
+                                                                                 resource-id="com.netease.play:id/layout_content_area"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[90,227][384,330]"
+                                                                                 displayed="true">
+                                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="icon 川崎小姐姐_H2R "
+                                                                                 resource-id="com.netease.play:id/name"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,243][370,273]"
+                                                                                 displayed="true"/>
+                                                        <android.widget.TextView index="1" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="被你的声音圈粉啦 "
+                                                                                 resource-id="com.netease.play:id/content"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="true" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,285][337,318]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.LinearLayout>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="6" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[20,350][514,457]" displayed="true">
+                                                    <android.widget.ImageView index="0" package="com.netease.play"
+                                                                              class="android.widget.ImageView" text=""
+                                                                              resource-id="com.netease.play:id/avatar"
+                                                                              checkable="false" checked="false"
+                                                                              clickable="true" enabled="true"
+                                                                              focusable="false" focused="false"
+                                                                              long-clickable="true" password="false"
+                                                                              scrollable="false" selected="false"
+                                                                              bounds="[20,350][94,424]"
+                                                                              displayed="true"/>
+                                                    <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                                 class="android.widget.LinearLayout"
+                                                                                 text=""
+                                                                                 resource-id="com.netease.play:id/layout_content_area"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[90,350][488,457]"
+                                                                                 displayed="true">
+                                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="icon 果冻的媳妇儿 "
+                                                                                 resource-id="com.netease.play:id/name"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,366][474,400]"
+                                                                                 displayed="true"/>
+                                                        <android.widget.TextView index="1" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="@瓶盖ol  "
+                                                                                 resource-id="com.netease.play:id/content"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="true" enabled="true"
+                                                                                 focusable="true" focused="false"
+                                                                                 long-clickable="true" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[106,412][224,445]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.LinearLayout>
+                                                </android.widget.FrameLayout>
+                                            </android.view.View>
+                                            <android.widget.FrameLayout index="1" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        resource-id="com.netease.play:id/honorEnterContainer"
+                                                                        checkable="false" checked="false"
+                                                                        clickable="false" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[0,194][768,334]" displayed="true">
+                                                <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            resource-id="com.netease.play:id/honorContainer"
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[0,194][768,334]" displayed="true">
+                                                    <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                                class="android.widget.FrameLayout"
+                                                                                text="" checkable="false"
+                                                                                checked="false" clickable="false"
+                                                                                enabled="true" focusable="false"
+                                                                                focused="false" long-clickable="false"
+                                                                                password="false" scrollable="false"
+                                                                                selected="false"
+                                                                                bounds="[0,242][510,286]"
+                                                                                displayed="true">
+                                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                                 class="android.widget.TextView"
+                                                                                 text="l林陌_进入了直播间"
+                                                                                 resource-id="com.netease.play:id/nickname"
+                                                                                 checkable="false" checked="false"
+                                                                                 clickable="false" enabled="true"
+                                                                                 focusable="false" focused="false"
+                                                                                 long-clickable="false" password="false"
+                                                                                 scrollable="false" selected="false"
+                                                                                 bounds="[32,246][299,282]"
+                                                                                 displayed="true"/>
+                                                    </android.widget.FrameLayout>
+                                                </android.widget.FrameLayout>
+                                                <android.widget.FrameLayout index="1" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            resource-id="com.netease.play:id/danmakuContainer"
+                                                                            checkable="false" checked="false"
+                                                                            clickable="false" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[0,224][768,304]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                            <android.widget.LinearLayout index="2" package="com.netease.play"
+                                                                         class="android.widget.LinearLayout" text=""
+                                                                         resource-id="com.netease.play:id/giftSlotsContainer"
+                                                                         checkable="false" checked="false"
+                                                                         clickable="false" enabled="true"
+                                                                         focusable="false" focused="false"
+                                                                         long-clickable="false" password="false"
+                                                                         scrollable="false" selected="false"
+                                                                         bounds="[0,334][768,546]" displayed="true"/>
+                                        </android.widget.RelativeLayout>
+                                    </android.widget.FrameLayout>
+                                    <android.widget.ImageView index="1" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/anchorProgress"
+                                                              checkable="false" checked="false" clickable="false"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[13,63][97,147]"
+                                                              displayed="true"/>
+                                    <android.widget.LinearLayout index="2" package="com.netease.play"
+                                                                 class="android.widget.LinearLayout" text=""
+                                                                 resource-id="com.netease.play:id/userinfoContainer"
+                                                                 checkable="false" checked="false" clickable="true"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[20,70][346,138]" displayed="true">
+                                        <android.widget.ImageView index="0" package="com.netease.play"
+                                                                  class="android.widget.ImageView" text=""
+                                                                  resource-id="com.netease.play:id/avatar"
+                                                                  checkable="false" checked="false" clickable="false"
+                                                                  enabled="true" focusable="false" focused="false"
+                                                                  long-clickable="false" password="false"
+                                                                  scrollable="false" selected="false"
+                                                                  bounds="[20,70][88,138]" displayed="true"/>
+                                        <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                     class="android.widget.LinearLayout" text=""
+                                                                     resource-id="com.netease.play:id/nameContainer"
+                                                                     checkable="false" checked="false" clickable="false"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[98,72][242,136]" displayed="true">
+                                            <android.widget.TextView index="0" package="com.netease.play"
+                                                                     class="android.widget.TextView" text="甜甜不是你的"
+                                                                     resource-id="com.netease.play:id/userName"
+                                                                     checkable="false" checked="false" clickable="false"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[98,72][242,108]" displayed="true"/>
+                                            <android.widget.TextView index="1" package="com.netease.play"
+                                                                     class="android.widget.TextView" text="159,556"
+                                                                     resource-id="com.netease.play:id/liveRoomNo"
+                                                                     checkable="false" checked="false" clickable="true"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[98,108][192,136]" displayed="true"/>
+                                        </android.widget.LinearLayout>
+                                        <android.view.View index="2" package="com.netease.play"
+                                                           class="android.view.View" text=""
+                                                           resource-id="com.netease.play:id/followBtn" checkable="false"
+                                                           checked="false" clickable="true" enabled="true"
+                                                           focusable="false" focused="false" long-clickable="false"
+                                                           password="false" scrollable="false" selected="false"
+                                                           bounds="[254,82][334,126]" displayed="true"/>
+                                    </android.widget.LinearLayout>
+                                    <android.widget.LinearLayout index="3" package="com.netease.play"
+                                                                 class="android.widget.LinearLayout" text=""
+                                                                 resource-id="com.netease.play:id/onlineUserContainer"
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[346,59][682,149]" displayed="true">
+                                        <android.view.View index="0" package="com.netease.play"
+                                                           class="android.view.View" text=""
+                                                           resource-id="com.netease.play:id/topUserRecyclerView"
+                                                           checkable="false" checked="false" clickable="false"
+                                                           enabled="true" focusable="true" focused="false"
+                                                           long-clickable="false" password="false" scrollable="true"
+                                                           selected="false" bounds="[352,59][682,149]" displayed="true">
+                                            <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        checkable="false" checked="false"
+                                                                        clickable="false" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[352,59][432,149]" displayed="true">
+                                                <android.widget.ImageView index="0" package="com.netease.play"
+                                                                          class="android.widget.ImageView" text=""
+                                                                          resource-id="com.netease.play:id/userAvatar"
+                                                                          checkable="false" checked="false"
+                                                                          clickable="true" enabled="true"
+                                                                          focusable="false" focused="false"
+                                                                          long-clickable="false" password="false"
+                                                                          scrollable="false" selected="false"
+                                                                          bounds="[352,64][432,144]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                            <android.widget.FrameLayout index="1" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        checkable="false" checked="false"
+                                                                        clickable="true" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[432,59][502,149]" displayed="true">
+                                                <android.widget.ImageView index="0" package="com.netease.play"
+                                                                          class="android.widget.ImageView" text=""
+                                                                          resource-id="com.netease.play:id/userAvatar"
+                                                                          checkable="false" checked="false"
+                                                                          clickable="false" enabled="true"
+                                                                          focusable="false" focused="false"
+                                                                          long-clickable="false" password="false"
+                                                                          scrollable="false" selected="false"
+                                                                          bounds="[432,64][502,144]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                            <android.widget.FrameLayout index="2" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        checkable="false" checked="false"
+                                                                        clickable="true" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[502,59][572,149]" displayed="true">
+                                                <android.widget.ImageView index="0" package="com.netease.play"
+                                                                          class="android.widget.ImageView" text=""
+                                                                          resource-id="com.netease.play:id/userAvatar"
+                                                                          checkable="false" checked="false"
+                                                                          clickable="false" enabled="true"
+                                                                          focusable="false" focused="false"
+                                                                          long-clickable="false" password="false"
+                                                                          scrollable="false" selected="false"
+                                                                          bounds="[502,59][572,149]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                            <android.widget.FrameLayout index="3" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        checkable="false" checked="false"
+                                                                        clickable="true" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[572,59][642,149]" displayed="true">
+                                                <android.widget.ImageView index="0" package="com.netease.play"
+                                                                          class="android.widget.ImageView" text=""
+                                                                          resource-id="com.netease.play:id/userAvatar"
+                                                                          checkable="false" checked="false"
+                                                                          clickable="false" enabled="true"
+                                                                          focusable="false" focused="false"
+                                                                          long-clickable="false" password="false"
+                                                                          scrollable="false" selected="false"
+                                                                          bounds="[572,64][642,144]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                            <android.widget.FrameLayout index="4" package="com.netease.play"
+                                                                        class="android.widget.FrameLayout" text=""
+                                                                        checkable="false" checked="false"
+                                                                        clickable="true" enabled="true"
+                                                                        focusable="false" focused="false"
+                                                                        long-clickable="false" password="false"
+                                                                        scrollable="false" selected="false"
+                                                                        bounds="[642,59][682,149]" displayed="true">
+                                                <android.widget.ImageView index="0" package="com.netease.play"
+                                                                          class="android.widget.ImageView" text=""
+                                                                          resource-id="com.netease.play:id/userAvatar"
+                                                                          checkable="false" checked="false"
+                                                                          clickable="false" enabled="true"
+                                                                          focusable="false" focused="false"
+                                                                          long-clickable="false" password="false"
+                                                                          scrollable="false" selected="false"
+                                                                          bounds="[642,68][682,140]" displayed="true"/>
+                                            </android.widget.FrameLayout>
+                                        </android.view.View>
+                                    </android.widget.LinearLayout>
+                                    <android.widget.LinearLayout index="4" package="com.netease.play"
+                                                                 class="android.widget.LinearLayout" text=""
+                                                                 resource-id="com.netease.play:id/nobleButton"
+                                                                 checkable="false" checked="false" clickable="true"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[678,64][758,144]" displayed="true">
+                                        <android.widget.TextView index="0" package="com.netease.play"
+                                                                 class="android.widget.TextView" text="贵族"
+                                                                 resource-id="com.netease.play:id/nobleTitle"
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[678,80][758,105]" displayed="true"/>
+                                        <android.widget.TextView index="1" package="com.netease.play"
+                                                                 class="android.widget.TextView" text="20"
+                                                                 resource-id="com.netease.play:id/nobleOnlineNum"
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[678,105][758,127]" displayed="true"/>
+                                    </android.widget.LinearLayout>
+                                    <android.widget.TextView index="5" package="com.netease.play"
+                                                             class="android.widget.TextView" text="公告"
+                                                             resource-id="com.netease.play:id/topNotice"
+                                                             checkable="false" checked="false" clickable="true"
+                                                             enabled="true" focusable="false" focused="false"
+                                                             long-clickable="false" password="false" scrollable="false"
+                                                             selected="false" bounds="[20,154][100,194]"
+                                                             displayed="true"/>
+                                    <android.widget.TextView index="6" package="com.netease.play"
+                                                             class="android.widget.TextView" text="143人"
+                                                             resource-id="com.netease.play:id/fansNum" checkable="false"
+                                                             checked="false" clickable="true" enabled="true"
+                                                             focusable="false" focused="false" long-clickable="false"
+                                                             password="false" scrollable="false" selected="false"
+                                                             bounds="[120,154][261,194]" displayed="true"/>
+                                    <android.widget.TextView index="7" package="com.netease.play"
+                                                             class="android.widget.TextView" text="805,545"
+                                                             resource-id="com.netease.play:id/cloudmoney"
+                                                             checkable="false" checked="false" clickable="true"
+                                                             enabled="true" focusable="false" focused="false"
+                                                             long-clickable="false" password="false" scrollable="false"
+                                                             selected="false" bounds="[281,154][447,194]"
+                                                             displayed="true"/>
+                                    <android.widget.TextView index="8" package="com.netease.play"
+                                                             class="android.widget.TextView" text="ID:210808929"
+                                                             resource-id="com.netease.play:id/idView" checkable="false"
+                                                             checked="false" clickable="false" enabled="true"
+                                                             focusable="false" focused="false" long-clickable="false"
+                                                             password="false" scrollable="false" selected="false"
+                                                             bounds="[626,160][748,184]" displayed="true"/>
+                                    <android.widget.LinearLayout index="9" package="com.netease.play"
+                                                                 class="android.widget.LinearLayout" text=""
+                                                                 resource-id="com.netease.play:id/decoratorContainer"
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[588,204][768,1042]" displayed="true">
+                                        <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                    class="android.widget.FrameLayout" text=""
+                                                                    resource-id="com.netease.play:id/luckyMoneyEntryContainer"
+                                                                    checkable="false" checked="false" clickable="true"
+                                                                    enabled="true" focusable="false" focused="false"
+                                                                    long-clickable="false" password="false"
+                                                                    scrollable="false" selected="false"
+                                                                    bounds="[618,722][718,842]" displayed="true">
+                                            <android.widget.ImageView index="0" package="com.netease.play"
+                                                                      class="android.widget.ImageView" text=""
+                                                                      resource-id="com.netease.play:id/background"
+                                                                      checkable="false" checked="false"
+                                                                      clickable="false" enabled="true" focusable="false"
+                                                                      focused="false" long-clickable="false"
+                                                                      password="false" scrollable="false"
+                                                                      selected="false" bounds="[628,732][708,832]"
+                                                                      displayed="true"/>
+                                            <android.widget.ImageView index="1" package="com.netease.play"
+                                                                      class="android.widget.ImageView" text=""
+                                                                      resource-id="com.netease.play:id/enterButton"
+                                                                      checkable="false" checked="false"
+                                                                      clickable="false" enabled="true" focusable="false"
+                                                                      focused="false" long-clickable="false"
+                                                                      password="false" scrollable="false"
+                                                                      selected="false" bounds="[650,758][686,794]"
+                                                                      displayed="true"/>
+                                            <android.widget.TextView index="2" package="com.netease.play"
+                                                                     class="android.widget.TextView" text="39秒"
+                                                                     resource-id="com.netease.play:id/countDown"
+                                                                     checkable="false" checked="false" clickable="false"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[628,796][708,824]" displayed="true"/>
+                                        </android.widget.FrameLayout>
+                                        <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                     class="android.widget.LinearLayout" text=""
+                                                                     resource-id="com.netease.play:id/livePromotionContainer"
+                                                                     checkable="false" checked="false" clickable="false"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[588,882][748,1042]" displayed="true">
+                                            <android.view.View index="0" package="com.netease.play"
+                                                               class="android.view.View" text=""
+                                                               resource-id="com.netease.play:id/livePromotionRecyclerView"
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="true" focused="false"
+                                                               long-clickable="false" password="false" scrollable="true"
+                                                               selected="false" bounds="[588,882][748,1022]"
+                                                               displayed="true">
+                                                <android.widget.FrameLayout index="0" package="com.netease.play"
+                                                                            class="android.widget.FrameLayout" text=""
+                                                                            checkable="false" checked="false"
+                                                                            clickable="true" enabled="true"
+                                                                            focusable="false" focused="false"
+                                                                            long-clickable="false" password="false"
+                                                                            scrollable="false" selected="false"
+                                                                            bounds="[588,882][748,1022]"
+                                                                            displayed="true">
+                                                    <android.widget.RelativeLayout index="0" package="com.netease.play"
+                                                                                   class="android.widget.RelativeLayout"
+                                                                                   text="" checkable="false"
+                                                                                   checked="false" clickable="false"
+                                                                                   enabled="true" focusable="false"
+                                                                                   focused="false"
+                                                                                   long-clickable="false"
+                                                                                   password="false" scrollable="false"
+                                                                                   selected="false"
+                                                                                   bounds="[598,882][738,1022]"
+                                                                                   displayed="true">
+                                                        <android.widget.ImageView index="0" package="com.netease.play"
+                                                                                  class="android.widget.ImageView"
+                                                                                  text=""
+                                                                                  resource-id="com.netease.play:id/promotionImage"
+                                                                                  checkable="false" checked="false"
+                                                                                  clickable="false" enabled="true"
+                                                                                  focusable="false" focused="false"
+                                                                                  long-clickable="false"
+                                                                                  password="false" scrollable="false"
+                                                                                  selected="false"
+                                                                                  bounds="[608,902][728,1022]"
+                                                                                  displayed="true"/>
+                                                    </android.widget.RelativeLayout>
+                                                </android.widget.FrameLayout>
+                                            </android.view.View>
+                                            <android.widget.LinearLayout index="1" package="com.netease.play"
+                                                                         class="android.widget.LinearLayout" text=""
+                                                                         resource-id="com.netease.play:id/livePromotionDotParent"
+                                                                         checkable="false" checked="false"
+                                                                         clickable="false" enabled="true"
+                                                                         focusable="false" focused="false"
+                                                                         long-clickable="false" password="false"
+                                                                         scrollable="false" selected="false"
+                                                                         bounds="[638,1032][698,1042]" displayed="true">
+                                                <android.view.View index="0" package="com.netease.play"
+                                                                   class="android.view.View" text="" checkable="false"
+                                                                   checked="false" clickable="false" enabled="true"
+                                                                   focusable="false" focused="false"
+                                                                   long-clickable="false" password="false"
+                                                                   scrollable="false" selected="true"
+                                                                   bounds="[643,1032][653,1042]" displayed="true"/>
+                                                <android.view.View index="1" package="com.netease.play"
+                                                                   class="android.view.View" text="" checkable="false"
+                                                                   checked="false" clickable="false" enabled="true"
+                                                                   focusable="false" focused="false"
+                                                                   long-clickable="false" password="false"
+                                                                   scrollable="false" selected="false"
+                                                                   bounds="[663,1032][673,1042]" displayed="true"/>
+                                                <android.view.View index="2" package="com.netease.play"
+                                                                   class="android.view.View" text="" checkable="false"
+                                                                   checked="false" clickable="false" enabled="true"
+                                                                   focusable="false" focused="false"
+                                                                   long-clickable="false" password="false"
+                                                                   scrollable="false" selected="false"
+                                                                   bounds="[683,1032][693,1042]" displayed="true"/>
+                                            </android.widget.LinearLayout>
+                                        </android.widget.LinearLayout>
+                                    </android.widget.LinearLayout>
+                                </android.widget.RelativeLayout>
+                                <android.view.View index="3" package="com.netease.play" class="android.view.View"
+                                                   text="" checkable="false" checked="false" clickable="false"
+                                                   enabled="true" focusable="false" focused="false"
+                                                   long-clickable="false" password="false" scrollable="false"
+                                                   selected="false" bounds="[0,0][768,1184]" displayed="true"/>
+                                <android.widget.FrameLayout index="4" package="com.netease.play"
+                                                            class="android.widget.FrameLayout" text=""
+                                                            resource-id="com.netease.play:id/animationContainer"
+                                                            checkable="false" checked="false" clickable="false"
+                                                            enabled="true" focusable="false" focused="false"
+                                                            long-clickable="false" password="false" scrollable="false"
+                                                            selected="false" bounds="[0,0][768,1184]" displayed="true">
+                                    <android.view.View index="0" package="com.netease.play" class="android.view.View"
+                                                       text="" checkable="false" checked="false" clickable="false"
+                                                       enabled="true" focusable="false" focused="false"
+                                                       long-clickable="false" password="false" scrollable="false"
+                                                       selected="false" bounds="[0,0][768,1184]" displayed="true"/>
+                                </android.widget.FrameLayout>
+                                <android.widget.LinearLayout index="5" package="com.netease.play"
+                                                             class="android.widget.LinearLayout" text=""
+                                                             resource-id="com.netease.play:id/bottomContainer"
+                                                             checkable="false" checked="false" clickable="false"
+                                                             enabled="true" focusable="false" focused="false"
+                                                             long-clickable="false" password="false" scrollable="false"
+                                                             selected="false" bounds="[0,1072][768,1184]"
+                                                             displayed="true">
+                                    <android.widget.TextView index="0" package="com.netease.play"
+                                                             class="android.widget.TextView" text="跟主播聊聊吧~"
+                                                             resource-id="com.netease.play:id/comment" checkable="false"
+                                                             checked="false" clickable="true" enabled="true"
+                                                             focusable="false" focused="false" long-clickable="false"
+                                                             password="false" scrollable="false" selected="false"
+                                                             bounds="[20,1092][288,1164]" displayed="true"/>
+                                    <android.widget.ImageView index="1" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/giftBtn"
+                                                              checkable="false" checked="false" clickable="true"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[308,1092][400,1164]"
+                                                              displayed="true"/>
+                                    <android.widget.FrameLayout index="2" package="com.netease.play"
+                                                                class="android.widget.FrameLayout" text=""
+                                                                resource-id="com.netease.play:id/playDisc"
+                                                                checkable="false" checked="false" clickable="true"
+                                                                enabled="true" focusable="false" focused="false"
+                                                                long-clickable="false" password="false"
+                                                                scrollable="false" selected="false"
+                                                                bounds="[385,1077][487,1179]" displayed="true">
+                                        <android.widget.ImageView index="0" package="com.netease.play"
+                                                                  class="android.widget.ImageView" text=""
+                                                                  resource-id="com.netease.play:id/playDiscImage"
+                                                                  checkable="false" checked="false" clickable="false"
+                                                                  enabled="true" focusable="false" focused="false"
+                                                                  long-clickable="false" password="false"
+                                                                  scrollable="false" selected="false"
+                                                                  bounds="[402,1094][470,1162]" displayed="true"/>
+                                    </android.widget.FrameLayout>
+                                    <android.widget.ImageView index="3" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/rtcButton"
+                                                              checkable="false" checked="false" clickable="true"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[492,1092][564,1164]"
+                                                              displayed="true"/>
+                                    <android.widget.ImageView index="4" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/moreButton"
+                                                              checkable="false" checked="false" clickable="true"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[584,1092][656,1164]"
+                                                              displayed="true"/>
+                                    <android.widget.ImageView index="5" package="com.netease.play"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.netease.play:id/closeBtn"
+                                                              checkable="false" checked="false" clickable="true"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[676,1092][748,1164]"
+                                                              displayed="true"/>
+                                </android.widget.LinearLayout>
+                            </android.widget.FrameLayout>
                         </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="1" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,194][281,293]" displayed="true">
-                          <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[20,194][76,246]" displayed="true" />
-                          <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/layout_content_area" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[90,194][255,293]" displayed="true">
-                            <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="icon HY-私御 " resource-id="com.netease.play:id/name" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,206][241,236]" displayed="true" />
-                            <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="新人报道 " resource-id="com.netease.play:id/content" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,248][225,281]" displayed="true" />
-                          </android.widget.LinearLayout>
-                        </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="2" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,313][402,416]" displayed="true">
-                          <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[20,313][76,369]" displayed="true" />
-                        </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="4" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,194][349,207]" displayed="true">
-                          <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/layout_content_area" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[90,194][323,207]" displayed="true">
-                            <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="打劫火箭交出来 " resource-id="com.netease.play:id/content" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,194][309,195]" displayed="true" />
-                          </android.widget.LinearLayout>
-                        </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="5" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,227][410,330]" displayed="true">
-                          <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[20,227][76,283]" displayed="true" />
-                          <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/layout_content_area" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[90,227][384,330]" displayed="true">
-                            <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="icon 川崎小姐姐_H2R " resource-id="com.netease.play:id/name" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,243][370,273]" displayed="true" />
-                            <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="被你的声音圈粉啦 " resource-id="com.netease.play:id/content" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,285][337,318]" displayed="true" />
-                          </android.widget.LinearLayout>
-                        </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="6" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,350][514,457]" displayed="true">
-                          <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[20,350][94,424]" displayed="true" />
-                          <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/layout_content_area" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[90,350][488,457]" displayed="true">
-                            <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="icon 果冻的媳妇儿 " resource-id="com.netease.play:id/name" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,366][474,400]" displayed="true" />
-                            <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="@瓶盖ol  " resource-id="com.netease.play:id/content" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[106,412][224,445]" displayed="true" />
-                          </android.widget.LinearLayout>
-                        </android.widget.FrameLayout>
-                      </android.view.View>
-                      <android.widget.FrameLayout index="1" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/honorEnterContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,194][768,334]" displayed="true">
-                        <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/honorContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,194][768,334]" displayed="true">
-                          <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,242][510,286]" displayed="true">
-                            <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="l林陌_进入了直播间" resource-id="com.netease.play:id/nickname" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[32,246][299,282]" displayed="true" />
-                          </android.widget.FrameLayout>
-                        </android.widget.FrameLayout>
-                        <android.widget.FrameLayout index="1" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/danmakuContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,224][768,304]" displayed="true" />
-                      </android.widget.FrameLayout>
-                      <android.widget.LinearLayout index="2" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/giftSlotsContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,334][768,546]" displayed="true" />
-                    </android.widget.RelativeLayout>
-                  </android.widget.FrameLayout>
-                  <android.widget.ImageView index="1" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/anchorProgress" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[13,63][97,147]" displayed="true" />
-                  <android.widget.LinearLayout index="2" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/userinfoContainer" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,70][346,138]" displayed="true">
-                    <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/avatar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,70][88,138]" displayed="true" />
-                    <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/nameContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[98,72][242,136]" displayed="true">
-                      <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="甜甜不是你的" resource-id="com.netease.play:id/userName" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[98,72][242,108]" displayed="true" />
-                      <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="159,556" resource-id="com.netease.play:id/liveRoomNo" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[98,108][192,136]" displayed="true" />
-                    </android.widget.LinearLayout>
-                    <android.view.View index="2" package="com.netease.play" class="android.view.View" text="" resource-id="com.netease.play:id/followBtn" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[254,82][334,126]" displayed="true" />
-                  </android.widget.LinearLayout>
-                  <android.widget.LinearLayout index="3" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/onlineUserContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[346,59][682,149]" displayed="true">
-                    <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" resource-id="com.netease.play:id/topUserRecyclerView" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[352,59][682,149]" displayed="true">
-                      <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[352,59][432,149]" displayed="true">
-                        <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/userAvatar" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[352,64][432,144]" displayed="true" />
-                      </android.widget.FrameLayout>
-                      <android.widget.FrameLayout index="1" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[432,59][502,149]" displayed="true">
-                        <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/userAvatar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[432,64][502,144]" displayed="true" />
-                      </android.widget.FrameLayout>
-                      <android.widget.FrameLayout index="2" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[502,59][572,149]" displayed="true">
-                        <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/userAvatar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[502,59][572,149]" displayed="true" />
-                      </android.widget.FrameLayout>
-                      <android.widget.FrameLayout index="3" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[572,59][642,149]" displayed="true">
-                        <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/userAvatar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[572,64][642,144]" displayed="true" />
-                      </android.widget.FrameLayout>
-                      <android.widget.FrameLayout index="4" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[642,59][682,149]" displayed="true">
-                        <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/userAvatar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[642,68][682,140]" displayed="true" />
-                      </android.widget.FrameLayout>
-                    </android.view.View>
-                  </android.widget.LinearLayout>
-                  <android.widget.LinearLayout index="4" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/nobleButton" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[678,64][758,144]" displayed="true">
-                    <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="贵族" resource-id="com.netease.play:id/nobleTitle" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[678,80][758,105]" displayed="true" />
-                    <android.widget.TextView index="1" package="com.netease.play" class="android.widget.TextView" text="20" resource-id="com.netease.play:id/nobleOnlineNum" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[678,105][758,127]" displayed="true" />
-                  </android.widget.LinearLayout>
-                  <android.widget.TextView index="5" package="com.netease.play" class="android.widget.TextView" text="公告" resource-id="com.netease.play:id/topNotice" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,154][100,194]" displayed="true" />
-                  <android.widget.TextView index="6" package="com.netease.play" class="android.widget.TextView" text="143人" resource-id="com.netease.play:id/fansNum" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[120,154][261,194]" displayed="true" />
-                  <android.widget.TextView index="7" package="com.netease.play" class="android.widget.TextView" text="805,545" resource-id="com.netease.play:id/cloudmoney" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[281,154][447,194]" displayed="true" />
-                  <android.widget.TextView index="8" package="com.netease.play" class="android.widget.TextView" text="ID:210808929" resource-id="com.netease.play:id/idView" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[626,160][748,184]" displayed="true" />
-                  <android.widget.LinearLayout index="9" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/decoratorContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[588,204][768,1042]" displayed="true">
-                    <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/luckyMoneyEntryContainer" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[618,722][718,842]" displayed="true">
-                      <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/background" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[628,732][708,832]" displayed="true" />
-                      <android.widget.ImageView index="1" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/enterButton" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[650,758][686,794]" displayed="true" />
-                      <android.widget.TextView index="2" package="com.netease.play" class="android.widget.TextView" text="39秒" resource-id="com.netease.play:id/countDown" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[628,796][708,824]" displayed="true" />
                     </android.widget.FrameLayout>
-                    <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/livePromotionContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[588,882][748,1042]" displayed="true">
-                      <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" resource-id="com.netease.play:id/livePromotionRecyclerView" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[588,882][748,1022]" displayed="true">
-                        <android.widget.FrameLayout index="0" package="com.netease.play" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[588,882][748,1022]" displayed="true">
-                          <android.widget.RelativeLayout index="0" package="com.netease.play" class="android.widget.RelativeLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[598,882][738,1022]" displayed="true">
-                            <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/promotionImage" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[608,902][728,1022]" displayed="true" />
-                          </android.widget.RelativeLayout>
-                        </android.widget.FrameLayout>
-                      </android.view.View>
-                      <android.widget.LinearLayout index="1" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/livePromotionDotParent" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[638,1032][698,1042]" displayed="true">
-                        <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="true" bounds="[643,1032][653,1042]" displayed="true" />
-                        <android.view.View index="1" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[663,1032][673,1042]" displayed="true" />
-                        <android.view.View index="2" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[683,1032][693,1042]" displayed="true" />
-                      </android.widget.LinearLayout>
-                    </android.widget.LinearLayout>
-                  </android.widget.LinearLayout>
-                </android.widget.RelativeLayout>
-                <android.view.View index="3" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true" />
-                <android.widget.FrameLayout index="4" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/animationContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true">
-                  <android.view.View index="0" package="com.netease.play" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][768,1184]" displayed="true" />
                 </android.widget.FrameLayout>
-                <android.widget.LinearLayout index="5" package="com.netease.play" class="android.widget.LinearLayout" text="" resource-id="com.netease.play:id/bottomContainer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1072][768,1184]" displayed="true">
-                  <android.widget.TextView index="0" package="com.netease.play" class="android.widget.TextView" text="跟主播聊聊吧~" resource-id="com.netease.play:id/comment" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[20,1092][288,1164]" displayed="true" />
-                  <android.widget.ImageView index="1" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/giftBtn" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[308,1092][400,1164]" displayed="true" />
-                  <android.widget.FrameLayout index="2" package="com.netease.play" class="android.widget.FrameLayout" text="" resource-id="com.netease.play:id/playDisc" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[385,1077][487,1179]" displayed="true">
-                    <android.widget.ImageView index="0" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/playDiscImage" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[402,1094][470,1162]" displayed="true" />
-                  </android.widget.FrameLayout>
-                  <android.widget.ImageView index="3" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/rtcButton" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[492,1092][564,1164]" displayed="true" />
-                  <android.widget.ImageView index="4" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/moreButton" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[584,1092][656,1164]" displayed="true" />
-                  <android.widget.ImageView index="5" package="com.netease.play" class="android.widget.ImageView" text="" resource-id="com.netease.play:id/closeBtn" checkable="false" checked="false" clickable="true" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[676,1092][748,1164]" displayed="true" />
-                </android.widget.LinearLayout>
-              </android.widget.FrameLayout>
             </android.widget.FrameLayout>
-          </android.widget.FrameLayout>
-        </android.widget.FrameLayout>
-      </android.widget.FrameLayout>
-    </android.widget.LinearLayout>
-  </android.widget.FrameLayout>
+        </android.widget.LinearLayout>
+    </android.widget.FrameLayout>
 </hierarchy>

@@ -8,29 +8,44 @@
 # @Email: GuoYiheng89@gmail.com
 # @Time: 1/15/2020 15:43
 from appium.webdriver.webdriver import WebDriver
-
+from datetime import datetime
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 
 
-def is_element_present(element_id: str):
+def ec_element_clickable(element_id: str):
+    """
+    :param element_id:
+    :return:
+    """
+    print(f'searching...  {datetime.today()}')
+    locator = (By.ID, element_id)
+    return EC.element_to_be_clickable(locator)
+
+
+def ec_element_present(element_id: str):
     """
     :param element_id:
     :return: if present return the element else return a Exception
     """
     locator = (By.ID, element_id)
-    return expected_conditions.presence_of_element_located(locator)
+    return EC.presence_of_element_located(locator)
 
 
-def is_elements_present(element_id: str):
+def ec_elements_present(element_id: str):
     """
     :param element_id:
     :return: if present return the element else return a Exception
     """
     locator = (By.ID, element_id)
-    return expected_conditions.presence_of_all_elements_located(locator)
+    return EC.presence_of_all_elements_located(locator)
+
+
+def waiting_clickable(driver: WebDriver, element_id: str, max_wait=30, interval=1):
+    return WebDriverWait(driver, timeout=max_wait, poll_frequency=interval).until(
+            ec_element_clickable(element_id))
 
 
 def waiting_element(driver: WebDriver, element_id: str, max_wait=30, interval=1):
@@ -44,7 +59,7 @@ def waiting_element(driver: WebDriver, element_id: str, max_wait=30, interval=1)
     :return:
     """
     WebDriverWait(driver, timeout=max_wait, poll_frequency=interval).until(
-            is_element_present(element_id))
+            ec_element_present(element_id))
     return driver.find_element_by_id(element_id)
 
 
@@ -59,5 +74,5 @@ def waiting_elements(driver: WebDriver, element_id: str, max_wait=30, interval=5
     :return:
     """
     WebDriverWait(driver, timeout=max_wait,
-                  poll_frequency=interval).until(is_elements_present(element_id))
+                  poll_frequency=interval).until(ec_elements_present(element_id))
     return driver.find_elements_by_id(element_id)

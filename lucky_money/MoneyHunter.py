@@ -8,9 +8,14 @@
 # @Email: GuoYiheng89@gmail.com
 # @Time: 1/15/2020 12:04
 import time
+
+from selenium.common.exceptions import InvalidElementStateException
+from selenium.common.exceptions import NoSuchElementException
+
 from lucky_money import driver_utils
 from datetime import datetime
 from appium import webdriver
+
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 
@@ -30,8 +35,8 @@ class MoneyHunter:
             'appPackage':             'com.netease.play',
             'appActivity':            'com.netease.play.appstart.LoadingActivity',
             'platformVersion':        '9',
-            # 'mjpegScreenshotUrl':     'http://192.168.1.214:8080/stream.mjpeg',
-            # 'automationName':         'UiAutomator2',
+            # 'mjpegScreenshotUrl':     'http://192.168.1.213:8080/stream.mjpeg',
+            'automationName':         'UiAutomator2',
             'ignoreUnimportantViews': True
     }
 
@@ -53,14 +58,14 @@ class MoneyHunter:
     def login(self):
         print('into login step...')
         # agree the privacy policy and wait for the splash screen finish
-        self.driver.find_element_by_id('com.netease.play:id/btnConfirm').click()
+        driver_utils.waiting_element(self.driver, 'com.netease.play:id/btnConfirm').click()
         # time.sleep(10)
 
         print('start choose land mode...')
         # tap at [], to confirm the agreement
         driver_utils.waiting_element(self.driver, 'com.netease.play:id/agreement')
         tap_point = (170, 1312) if self.is_emulator else (191, 1826)
-        self.driver.tap([tap_point], 500)
+        self.driver.tap([tap_point])
 
         # choose land mode
         self.driver.find_element_by_id('com.netease.play:id/phone').click()
@@ -102,13 +107,45 @@ class MoneyHunter:
 
     def watch_fly(self):
 
-        self.driver.implicitly_wait(10)
+        # self.driver.implicitly_wait(10)
         print('start watching fly...')
+
+        # self.driver.implicitly_wait(0.1)
+        live_view = driver_utils.waiting_element(self.driver, 'com.netease.play:id/liveViewerFragment')
+        self.driver.implicitly_wait(0.5)
         while True:
-            print(f'tap {datetime.today()}')
-            time.sleep(1)
-            tap_point = (700, 180) if self.is_emulator else (900, 250)
-            self.driver.tap([tap_point], 500)
+            try:
+                print(f'search...{datetime.today()}')
+                live_view.find_element_by_id('com.netease.play:id/liveNoticeContainer')
+                print(f'fly appear...')
+                break
+            except NoSuchElementException as e:
+                print(f'NoSuchElementException: liveNoticeContainer')
+            except InvalidElementStateException as e:
+                print(f'InvalidElementStateException: liveNoticeContainer')
+            except Exception as e:
+                print(f'Other Exception during search Notice: {e}')
+        # tap the fly
+        tap_point = (700, 180) if self.is_emulator else (980, 253)
+        self.driver.tap([tap_point])
+
+        time.sleep(2)
+        tap_point = (700, 180) if self.is_emulator else (980, 253)
+        self.driver.tap([tap_point])
+
+        try:
+            self.driver.find_element_by_id('com.netease.play:id/luckyMoneyEntryContainer').click()
+            self.grap()
+        except NoSuchElementException as e:
+            print(f'NoSuchElementException: luckyMoneyEntryContainer')
+            self.watch_fly()
+        except Exception as e:
+            print(e)
+
+    def grap(self):
+        print(f'waiting to grap {datetime.today()}')
+        text = self.driver.find_element_by_id('com.netease.play:id/openButton').text
+        print(f'time to click {text}')
 
 
 if __name__ == '__main__':

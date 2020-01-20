@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Description: 
-# @File: money_hunter_real.py
+# @File: hunter_real.py
 # @Project: look_data
 # @Author: Yiheng
 # @Email: GuoYiheng89@gmail.com

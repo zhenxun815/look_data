@@ -19,7 +19,6 @@ def ec_element_clickable(element_id: str):
     :param element_id:
     :return:
     """
-    print(f'searching...  {datetime.today()}')
     locator = (By.ID, element_id)
     return EC.element_to_be_clickable(locator)
 

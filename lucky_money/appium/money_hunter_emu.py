@@ -12,13 +12,11 @@ import time
 from selenium.common.exceptions import InvalidElementStateException
 from selenium.common.exceptions import NoSuchElementException
 
-from lucky_money import driver_utils
+from lucky_money.appium import driver_utils, KeyCode
 from datetime import datetime
 from appium import webdriver
 
-from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
-from lucky_money import KeyCode
 
 emulator_desired_caps = {
         'platformName':           'Android',
@@ -120,7 +118,7 @@ def enter_room_by_search_id(room_id):
     # enter the room
     # driver_utils.waiting_element(waiter,'com.netease.play:id/liveStatus')
     driver.tap([(75, 235)])
-    return driver_utils.waiting_element(waiter,'com.netease.play:id/liveViewerFragment')
+    return driver_utils.waiting_element(waiter, 'com.netease.play:id/liveViewerFragment')
 
 
 if __name__ == '__main__':

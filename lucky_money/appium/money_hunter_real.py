@@ -12,11 +12,10 @@ import time
 from selenium.common.exceptions import InvalidElementStateException
 from selenium.common.exceptions import NoSuchElementException
 
-from lucky_money import driver_utils
+from lucky_money.appium import driver_utils
 from datetime import datetime
 from appium import webdriver
 
-from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.support.ui import WebDriverWait
 
 miaomi_desired_caps = {

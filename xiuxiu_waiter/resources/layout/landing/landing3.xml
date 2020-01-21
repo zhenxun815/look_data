@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<hierarchy index="0" class="hierarchy" rotation="0" width="768" height="1366">
+    <android.widget.FrameLayout index="0" package="com.happyteam.dubbingshow" class="android.widget.FrameLayout" text=""
+                                checkable="false" checked="false" clickable="false" enabled="true" focusable="false"
+                                focused="false" long-clickable="false" password="false" scrollable="false"
+                                selected="false" bounds="[0,0][768,1366]" displayed="true">
+        <android.widget.LinearLayout index="0" package="com.happyteam.dubbingshow" class="android.widget.LinearLayout"
+                                     text="" checkable="false" checked="false" clickable="false" enabled="true"
+                                     focusable="false" focused="false" long-clickable="false" password="false"
+                                     scrollable="false" selected="false" bounds="[0,0][768,1366]" displayed="true">
+            <android.widget.FrameLayout index="0" package="com.happyteam.dubbingshow" class="android.widget.FrameLayout"
+                                        text="" checkable="false" checked="false" clickable="false" enabled="true"
+                                        focusable="false" focused="false" long-clickable="false" password="false"
+                                        scrollable="false" selected="false" bounds="[0,0][768,1366]" displayed="true">
+                <android.widget.LinearLayout index="0" package="com.happyteam.dubbingshow"
+                                             class="android.widget.LinearLayout" text=""
+                                             resource-id="com.happyteam.dubbingshow:id/action_bar_root"
+                                             checkable="false" checked="false" clickable="false" enabled="true"
+                                             focusable="false" focused="false" long-clickable="false" password="false"
+                                             scrollable="false" selected="false" bounds="[0,40][768,1366]"
+                                             displayed="true">
+                    <android.widget.FrameLayout index="0" package="com.happyteam.dubbingshow"
+                                                class="android.widget.FrameLayout" text=""
+                                                resource-id="android:id/content" checkable="false" checked="false"
+                                                clickable="false" enabled="true" focusable="false" focused="false"
+                                                long-clickable="false" password="false" scrollable="false"
+                                                selected="false" bounds="[0,40][768,1366]" displayed="true">
+                        <android.widget.RelativeLayout index="0" package="com.happyteam.dubbingshow"
+                                                       class="android.widget.RelativeLayout" text="" checkable="false"
+                                                       checked="false" clickable="false" enabled="true"
+                                                       focusable="false" focused="false" long-clickable="false"
+                                                       password="false" scrollable="false" selected="false"
+                                                       bounds="[0,40][768,1366]" displayed="true">
+                            <android.widget.LinearLayout index="0" package="com.happyteam.dubbingshow"
+                                                         class="android.widget.LinearLayout" text="" checkable="false"
+                                                         checked="false" clickable="false" enabled="true"
+                                                         focusable="false" focused="false" long-clickable="false"
+                                                         password="false" scrollable="false" selected="false"
+                                                         bounds="[0,40][768,1366]" displayed="true">
+                                <android.widget.RelativeLayout index="0" package="com.happyteam.dubbingshow"
+                                                               class="android.widget.RelativeLayout" text=""
+                                                               resource-id="com.happyteam.dubbingshow:id/titleTopView"
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="false" focused="false"
+                                                               long-clickable="false" password="false"
+                                                               scrollable="false" selected="false"
+                                                               bounds="[0,40][768,110]" displayed="true">
+                                    <android.widget.RelativeLayout index="0" package="com.happyteam.dubbingshow"
+                                                                   class="android.widget.RelativeLayout" text=""
+                                                                   checkable="false" checked="false" clickable="false"
+                                                                   enabled="true" focusable="false" focused="false"
+                                                                   long-clickable="false" password="false"
+                                                                   scrollable="false" selected="false"
+                                                                   bounds="[0,40][768,110]" displayed="true">
+                                        <android.widget.RelativeLayout index="0" package="com.happyteam.dubbingshow"
+                                                                       class="android.widget.RelativeLayout" text=""
+                                                                       checkable="false" checked="false"
+                                                                       clickable="false" enabled="true"
+                                                                       focusable="false" focused="false"
+                                                                       long-clickable="false" password="false"
+                                                                       scrollable="false" selected="false"
+                                                                       bounds="[0,40][768,110]" displayed="true">
+                                            <android.widget.ImageView index="0" package="com.happyteam.dubbingshow"
+                                                                      class="android.widget.ImageView" text=""
+                                                                      resource-id="com.happyteam.dubbingshow:id/btnBack"
+                                                                      checkable="false" checked="false" clickable="true"
+                                                                      enabled="true" focusable="false" focused="false"
+                                                                      long-clickable="false" password="false"
+                                                                      scrollable="false" selected="false"
+                                                                      bounds="[0,56][78,94]" displayed="true"/>
+                                            <android.widget.TextView index="1" package="com.happyteam.dubbingshow"
+                                                                     class="android.widget.TextView" text="手机号登录"
+                                                                     resource-id="com.happyteam.dubbingshow:id/txtTitle"
+                                                                     checkable="false" checked="false" clickable="false"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[127,55][641,94]" displayed="true"/>
+                                            <android.widget.TextView index="2" package="com.happyteam.dubbingshow"
+                                                                     class="android.widget.TextView" text="验证码登录"
+                                                                     resource-id="com.happyteam.dubbingshow:id/tv_right"
+                                                                     checkable="false" checked="false" clickable="true"
+                                                                     enabled="true" focusable="false" focused="false"
+                                                                     long-clickable="false" password="false"
+                                                                     scrollable="false" selected="false"
+                                                                     bounds="[619,40][768,110]" displayed="true"/>
+                                        </android.widget.RelativeLayout>
+                                    </android.widget.RelativeLayout>
+                                </android.widget.RelativeLayout>
+                                <android.widget.RelativeLayout index="1" package="com.happyteam.dubbingshow"
+                                                               class="android.widget.RelativeLayout" text=""
+                                                               resource-id="com.happyteam.dubbingshow:id/rl_phone"
+                                                               checkable="false" checked="false" clickable="false"
+                                                               enabled="true" focusable="false" focused="false"
+                                                               long-clickable="false" password="false"
+                                                               scrollable="false" selected="false"
+                                                               bounds="[57,156][711,232]" displayed="true">
+                                    <android.widget.LinearLayout index="0" package="com.happyteam.dubbingshow"
+                                                                 class="android.widget.LinearLayout" text=""
+                                                                 resource-id="com.happyteam.dubbingshow:id/linear"
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[57,156][179,232]" displayed="true">
+                                        <android.widget.TextView index="0" package="com.happyteam.dubbingshow"
+                                                                 class="android.widget.TextView" text="+86"
+                                                                 resource-id="com.happyteam.dubbingshow:id/zone_tv"
+                                                                 checkable="false" checked="false" clickable="true"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[57,156][165,232]" displayed="true"/>
+                                        <android.widget.TextView index="1" package="com.happyteam.dubbingshow"
+                                                                 class="android.widget.TextView" text=""
+                                                                 checkable="false" checked="false" clickable="false"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[178,181][179,206]" displayed="true"/>
+                                    </android.widget.LinearLayout>
+                                    <android.widget.EditText index="1" package="com.happyteam.dubbingshow"
+                                                             class="android.widget.EditText" text="请输入手机号"
+                                                             content-desc="mobile"
+                                                             resource-id="com.happyteam.dubbingshow:id/et_number"
+                                                             checkable="false" checked="false" clickable="true"
+                                                             enabled="true" focusable="true" focused="true"
+                                                             long-clickable="true" password="false" scrollable="false"
+                                                             selected="false" bounds="[179,156][711,232]"
+                                                             displayed="true"/>
+                                </android.widget.RelativeLayout>
+                                <android.widget.FrameLayout index="2" package="com.happyteam.dubbingshow"
+                                                            class="android.widget.FrameLayout" text=""
+                                                            resource-id="com.happyteam.dubbingshow:id/fl_psw"
+                                                            checkable="false" checked="false" clickable="false"
+                                                            enabled="true" focusable="false" focused="false"
+                                                            long-clickable="false" password="false" scrollable="false"
+                                                            selected="false" bounds="[57,270][711,346]"
+                                                            displayed="true">
+                                    <android.widget.EditText index="0" package="com.happyteam.dubbingshow"
+                                                             class="android.widget.EditText" text="" content-desc="pwd"
+                                                             resource-id="com.happyteam.dubbingshow:id/et_password"
+                                                             checkable="false" checked="false" clickable="true"
+                                                             enabled="true" focusable="true" focused="false"
+                                                             long-clickable="true" password="true" scrollable="false"
+                                                             selected="false" bounds="[57,270][711,346]"
+                                                             displayed="true"/>
+                                    <android.widget.ImageView index="1" package="com.happyteam.dubbingshow"
+                                                              class="android.widget.ImageView" text=""
+                                                              resource-id="com.happyteam.dubbingshow:id/login_eye_tv"
+                                                              checkable="false" checked="false" clickable="true"
+                                                              enabled="true" focusable="false" focused="false"
+                                                              long-clickable="false" password="false" scrollable="false"
+                                                              selected="false" bounds="[648,276][711,339]"
+                                                              displayed="true"/>
+                                </android.widget.FrameLayout>
+                                <android.widget.LinearLayout index="3" package="com.happyteam.dubbingshow"
+                                                             class="android.widget.LinearLayout" text=""
+                                                             checkable="false" checked="false" clickable="false"
+                                                             enabled="true" focusable="false" focused="false"
+                                                             long-clickable="false" password="false" scrollable="false"
+                                                             selected="false" bounds="[0,410][768,553]"
+                                                             displayed="true">
+                                    <android.widget.TextView index="0" package="com.happyteam.dubbingshow"
+                                                             class="android.widget.TextView" text="登录"
+                                                             content-desc="login"
+                                                             resource-id="com.happyteam.dubbingshow:id/tv_login"
+                                                             checkable="false" checked="false" clickable="true"
+                                                             enabled="false" focusable="false" focused="false"
+                                                             long-clickable="false" password="false" scrollable="false"
+                                                             selected="false" bounds="[57,410][711,486]"
+                                                             displayed="true"/>
+                                    <android.widget.RelativeLayout index="1" package="com.happyteam.dubbingshow"
+                                                                   class="android.widget.RelativeLayout" text=""
+                                                                   resource-id="com.happyteam.dubbingshow:id/rl_account"
+                                                                   checkable="false" checked="false" clickable="false"
+                                                                   enabled="true" focusable="false" focused="false"
+                                                                   long-clickable="false" password="false"
+                                                                   scrollable="false" selected="false"
+                                                                   bounds="[83,507][685,553]" displayed="true">
+                                        <android.widget.TextView index="0" package="com.happyteam.dubbingshow"
+                                                                 class="android.widget.TextView" text="立即注册"
+                                                                 resource-id="com.happyteam.dubbingshow:id/to_register"
+                                                                 checkable="false" checked="false" clickable="true"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[83,507][187,553]" displayed="true"/>
+                                        <android.widget.TextView index="1" package="com.happyteam.dubbingshow"
+                                                                 class="android.widget.TextView" text="忘记密码"
+                                                                 resource-id="com.happyteam.dubbingshow:id/forget_psw"
+                                                                 checkable="false" checked="false" clickable="true"
+                                                                 enabled="true" focusable="false" focused="false"
+                                                                 long-clickable="false" password="false"
+                                                                 scrollable="false" selected="false"
+                                                                 bounds="[581,507][685,553]" displayed="true"/>
+                                    </android.widget.RelativeLayout>
+                                </android.widget.LinearLayout>
+                            </android.widget.LinearLayout>
+                        </android.widget.RelativeLayout>
+                    </android.widget.FrameLayout>
+                </android.widget.LinearLayout>
+            </android.widget.FrameLayout>
+        </android.widget.LinearLayout>
+    </android.widget.FrameLayout>
+</hierarchy>

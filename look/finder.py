@@ -9,7 +9,7 @@
 # @Time: 1/21/2020 15:55
 import re
 
-from selenium.common.exceptions import TimeoutException, WebDriverException
+from selenium.common.exceptions import TimeoutException, WebDriverException, NoSuchWindowException
 from selenium.webdriver.support.wait import WebDriverWait
 
 from utils import common_utils
@@ -38,11 +38,7 @@ class Finder:
 
             top3_names = self.waiter.until(lambda x: x.find_elements_by_xpath(
                     '//div[@id="top-panel"]/div/div[2]/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/div'))
-
-            # print(f'top3 length {len(top3_names)}')
             all_names.extend(top3_names)
-            if len(all_names) < 3:
-                return all_names, failed_url
             # click load more btn
             self.waiter.until(
                     lambda x: x.find_element_by_xpath('//div[@id="top-panel"]/div/div[2]/div[2]/div[2]')).click()
@@ -73,7 +69,9 @@ class Finder:
         except WebDriverException:
             print(f'other WebDriverException when get rank in: {self.wd.current_url}')
             failed_url = self.wd.current_url
-
+        except Exception:
+            print(f'other WebDriverException when get rank in: {self.wd.current_url}')
+            failed_url = self.wd.current_url
         # print(f'all names length is {len(other_names)}')
         return all_names, failed_url
 
@@ -81,9 +79,9 @@ class Finder:
 def is_aim_in(aim, names2judge):
     for name in names2judge:
         name = name.text
-        # print(f'name to judge {aim} is {name}')
+        #print(f'name to judge {aim} is {name}')
         if name.find(aim) > -1:
-            print(f'find {aim} in name {name}')
+            #print(f'find {aim} in name {name}')
             return True
     return False
 
@@ -125,7 +123,7 @@ def check_test_room(name_finder, test_room_url, aim_name):
 if __name__ == '__main__':
     RANK_TYPE_DATE = 1
     RANK_TYPE_WEEK = 2
-    RANK_TYPE_DMONTH = 3
+    RANK_TYPE_MONTH = 3
     aim = 'KLyn'
     test_aim = '炫迈'
     test_url = 'https://look.163.com/live?id=173539365'
@@ -137,10 +135,15 @@ if __name__ == '__main__':
 
     listen_room_urls = try_again_urls
     rooms = room_aims_to_check
+    try_time = 0
     while len(listen_room_urls) > 0:
+        try_time += 1
         room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, aim, rank_type=RANK_TYPE_WEEK)
         listen_room_urls = try_again_urls
         rooms.extend(room_aims_to_check)
+
+        if try_time > 2:
+            break
 
     collections_utils.print_list(rooms)
     # check_test_room(finder, test_url, test_aim)

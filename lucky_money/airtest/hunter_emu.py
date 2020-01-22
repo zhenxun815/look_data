@@ -78,11 +78,12 @@ def listen_notice():
             print('live notice not appearance...')
 
 
-def grab():
+def grab(lucky_money_container=None):
     print(f'ready to grab!')
-    lucky_money_container = poco(name='com.netease.play:id/luckyMoneyEntryContainer')
     try:
-        lucky_money_container.wait_for_appearance(10)
+        if not lucky_money_container:
+            lucky_money_container = poco(name='com.netease.play:id/luckyMoneyEntryContainer')
+            lucky_money_container.wait_for_appearance(10)
         lucky_money_container.click()
         try:
             open_btn = poco(name='com.netease.play:id/openButton')
@@ -100,6 +101,8 @@ def grab():
 
                         close_btn = poco(name='com.netease.play:id/closeButton')
                         close_btn.click()
+                        if poco(name='com.netease.play:id/luckyMoneyEntryContainer').exists():
+                            grab()
                         return FLAG_GRAB_SUCCESS
                     except PocoTargetTimeout:
                         print('resultGold not appearance...')
@@ -111,9 +114,6 @@ def grab():
 
     except PocoTargetTimeout:
         print('luckyMoneyEntryContainer not appearance...')
-
-    if lucky_money_container.exists():
-        grab()
 
 
 def cancel_update():
@@ -141,7 +141,7 @@ def to_listen():
 
 
 def main_work_flow():
-    #connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
+    # connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
     stop_app('com.netease.play')
     start_app('com.netease.play')
 

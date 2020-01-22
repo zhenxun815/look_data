@@ -24,7 +24,7 @@ from look import anchor_collect
 class Finder:
     def __init__(self, driver: webdriver):
         self.wd = driver
-        self.waiter = WebDriverWait(self.wd, 20, 1)
+        self.waiter = WebDriverWait(self.wd, 10, 1)
 
     def enter_room(self, room_url):
         self.wd.get(room_url)
@@ -41,6 +41,8 @@ class Finder:
 
             # print(f'top3 length {len(top3_names)}')
             all_names.extend(top3_names)
+            if len(all_names) < 3:
+                return all_names, failed_url
             # click load more btn
             self.waiter.until(
                     lambda x: x.find_element_by_xpath('//div[@id="top-panel"]/div/div[2]/div[2]/div[2]')).click()
@@ -94,12 +96,12 @@ def get_anchor_id(room_url):
     return room_id
 
 
-def check_all_room(name_finder, room_urls, aim_name):
+def check_all_room(name_finder, room_urls, aim_name, rank_type=2):
     room_aims = []
     failed_urls = []
     for room_url in room_urls:
         name_finder.enter_room(room_url)
-        names, failed_url = name_finder.get_rank()
+        names, failed_url = name_finder.get_rank(rank_type)
         if failed_url:
             failed_urls.append(failed_url)
             continue
@@ -121,19 +123,22 @@ def check_test_room(name_finder, test_room_url, aim_name):
 
 
 if __name__ == '__main__':
+    RANK_TYPE_DATE = 1
+    RANK_TYPE_WEEK = 2
+    RANK_TYPE_DMONTH = 3
     aim = 'KLyn'
     test_aim = '炫迈'
     test_url = 'https://look.163.com/live?id=173539365'
 
-    wd = common_utils.init_driver(headless=False)
-    listen_room_urls = anchor_collect.collect_anchor_rooms(2, 200, wd)
+    wd = common_utils.init_driver()
+    listen_room_urls = anchor_collect.collect_anchor_rooms(2, 500, wd)
     finder = Finder(wd)
-    room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, test_aim)
+    room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, aim, rank_type=RANK_TYPE_WEEK)
 
     listen_room_urls = try_again_urls
     rooms = room_aims_to_check
     while len(listen_room_urls) > 0:
-        room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, test_aim)
+        room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, aim, rank_type=RANK_TYPE_WEEK)
         listen_room_urls = try_again_urls
         rooms.extend(room_aims_to_check)
 

@@ -65,7 +65,7 @@ class Finder:
             all_names.extend(other_names)
         except TimeoutException:
             print(f'TimeoutException when get rank in: {self.wd.current_url}')
-            failed_url = self.wd.current_url
+            # failed_url = self.wd.current_url
         except WebDriverException:
             print(f'other WebDriverException when get rank in: {self.wd.current_url}')
             failed_url = self.wd.current_url
@@ -79,9 +79,9 @@ class Finder:
 def is_aim_in(aim, names2judge):
     for name in names2judge:
         name = name.text
-        #print(f'name to judge {aim} is {name}')
+        # print(f'name to judge {aim} is {name}')
         if name.find(aim) > -1:
-            #print(f'find {aim} in name {name}')
+            # print(f'find {aim} in name {name}')
             return True
     return False
 

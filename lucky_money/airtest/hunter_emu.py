@@ -14,19 +14,24 @@ from datetime import datetime
 from airtest.core.api import *
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 
+auto_setup(__file__,
+           devices=[
+                   "Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP^&^&ori_method=ADBORI",
+           ])
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
-auto_setup(__file__)
 
 FLAG_RESTART = 'restart'
 FLAG_READY_GRAB = 'ready_grab'
 FLAG_GRAB_SUCCESS = 'grab_success'
 FLAG_UPDATE_CANCEL = 'update_cancel'
 
+anchor = None
+
 
 def close_web_float():
     web_close_btn = poco(name='com.netease.play:id/webviewPendant').child(name='com.netease.play:id/closeBtn')
     try:
-        web_close_btn.wait_for_appearance(timeout=10)
+        web_close_btn.wait_for_appearance(timeout=5)
         web_close_btn.click()
         print('web view float close...')
     except PocoTargetTimeout:
@@ -50,8 +55,8 @@ def listen_notice():
     get_name_fail = 0
     while True:
         print(f'watching fly notice...{datetime.today()}')
-        if get_name_fail > 5:
-            break
+        if get_name_fail == 5:
+            return FLAG_RESTART, anchor_name
         try:
             anchor_name = get_anchor_name()
             if anchor_name:
@@ -65,14 +70,12 @@ def listen_notice():
             print(f'notice is {notice_text}')
             if notice_text.find('红包') > -1:
                 print('lucky money appear...')
-                live_notice.parent().click()
-                break
+                live_notice.parent().click(sleep_interval=2)
+                return FLAG_READY_GRAB, anchor_name
             else:
                 live_notice = poco(name='com.netease.play:id/liveNotice')
         except PocoTargetTimeout:
             print('live notice not appearance...')
-
-    return FLAG_READY_GRAB
 
 
 def grab():
@@ -103,6 +106,8 @@ def grab():
                         return FLAG_RESTART
         except PocoTargetTimeout:
             print('openButton not appearance...')
+        except PocoNoSuchNodeException:
+            print('openButton not found...')
 
     except PocoTargetTimeout:
         print('luckyMoneyEntryContainer not appearance...')
@@ -136,7 +141,7 @@ def to_listen():
 
 
 def main_work_flow():
-    connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
+    #connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
     stop_app('com.netease.play')
     start_app('com.netease.play')
 
@@ -148,16 +153,24 @@ def main_work_flow():
 
     rooms = poco(name='com.netease.play:id/homecard')
     rooms.wait_for_appearance(10)
-    print(f'{len(rooms)}')
-    rooms[1].click()
+    # print(f'rooms count: {len(rooms)}')
+
+    # avoid forbidden
+    for i in range(1, len(rooms)):
+        rooms[i].click()
+        time.sleep(2)
+        if get_anchor_name():
+            break
+
     close_web_float()
     while True:
-        flag = listen_notice()
+        flag, anchor = listen_notice()
         if FLAG_RESTART == flag:
             print('restart')
             break
         elif FLAG_READY_GRAB == flag:
-            close_web_float()
+            if anchor is not get_anchor_name():
+                close_web_float()
             grab_flag = grab()
             if FLAG_RESTART == grab_flag:
                 print('restart')

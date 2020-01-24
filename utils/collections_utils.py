@@ -18,6 +18,9 @@ def print_list(alist: list, print_commont='', print_index=False):
             print(f'{print_commont} {item}')
 
 
-def print_dict(adict: dict, work):
+def print_dict(adict: dict, work=None):
     for k, v in adict.items():
-        print(f'k:{k}, v:{work(v)}')
+        if work:
+            print(f'k:{k}, v:{work(v)}')
+        else:
+            print(f'k:{k}, v:{v}')

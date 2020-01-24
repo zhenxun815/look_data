@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Description: 
-# @File: hunter_emu.py
+# @File: sniper.py
 # @Project: look_data
 # @Author: Yiheng
 # @Email: GuoYiheng89@gmail.com
@@ -31,7 +31,7 @@ anchor = None
 def close_web_float():
     web_close_btn = poco(name='com.netease.play:id/webviewPendant').child(name='com.netease.play:id/closeBtn')
     try:
-        web_close_btn.wait_for_appearance(timeout=5)
+        web_close_btn.wait_for_appearance(timeout=2)
         web_close_btn.click()
         print('web view float close...')
     except PocoTargetTimeout:
@@ -87,7 +87,7 @@ def grab(lucky_money_container=None):
         lucky_money_container.click()
         try:
             open_btn = poco(name='com.netease.play:id/openButton')
-            open_btn.wait_for_appearance(3)
+            open_btn.wait_for_appearance(10)
             while True:
                 open_btn = poco(name='com.netease.play:id/openButton')
                 btn_text = open_btn.get_text()

@@ -87,7 +87,7 @@ def grab(lucky_money_container=None):
         lucky_money_container.click()
         try:
             open_btn = poco(name='com.netease.play:id/openButton')
-            open_btn.wait_for_appearance(10)
+            open_btn.wait_for_appearance(5)
             while True:
                 open_btn = poco(name='com.netease.play:id/openButton')
                 btn_text = open_btn.get_text()

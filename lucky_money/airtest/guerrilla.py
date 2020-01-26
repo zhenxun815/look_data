@@ -7,7 +7,7 @@
 # @Author: Yiheng
 # @Email: GuoYiheng89@gmail.com
 # @Time: 1/24/2020 15:31
-from poco.exceptions import PocoTargetTimeout, PocoNoSuchNodeException
+from poco.exceptions import PocoTargetTimeout, PocoNoSuchNodeException, PocoException
 from datetime import datetime
 
 from airtest.core.api import *
@@ -45,7 +45,7 @@ def to_space(space_flag):
         listen.click()
         print(f'to space {space_name}...')
     except PocoTargetTimeout:
-        print('listen not appearance...')
+        print('not home page...')
         return FLAG_RESTART
 
 
@@ -92,7 +92,10 @@ def swipe_to_next(space_flag=0):
 def patrol(space_flag, patrol_round_time):
     # connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
 
-    to_space(space_flag)
+    to_space_flag = to_space(space_flag)
+    if to_space_flag:
+        return to_space_flag
+
     rooms = poco(name='com.netease.play:id/homecard')
     rooms.wait_for_appearance(10)
     rooms[0].click()
@@ -141,7 +144,9 @@ def patrol(space_flag, patrol_round_time):
                                     follow_btn.click()
                                     break
                     except PocoTargetTimeout:
-                        print('follow failed...')
+                        print('follow btn not appear...')
+                    except PocoException:
+                        print('follow and grab failed...')
 
                     while True:
                         open_btn = poco(name='com.netease.play:id/openButton')

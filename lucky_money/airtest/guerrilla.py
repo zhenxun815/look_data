@@ -76,11 +76,11 @@ def get_anchor_name(should_print=False):
         return None
 
 
-def swip_to_next(space_flag=0):
+def swipe_to_next(space_flag=0):
     if space_flag % 2 == 0:
         print('swipe listen space...')
-        swipe((0.5 * screen_width, 0.8 * screen_height),
-              (0.5 * screen_width, 0.1 * screen_height),
+        swipe((0.8 * screen_width, 0.8 * screen_height),
+              (0.8 * screen_width, 0.1 * screen_height),
               duration=0.5)
     else:
         print('swipe look space...')
@@ -89,14 +89,8 @@ def swip_to_next(space_flag=0):
               duration=0.5)
 
 
-def patrol(space_flag):
+def patrol(space_flag, patrol_round_time):
     # connect_device('Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP')
-    stop_app('com.netease.play')
-    start_app('com.netease.play')
-
-    update_flag = cancel_update()
-    if FLAG_RESTART == update_flag:
-        return
 
     to_space(space_flag)
     rooms = poco(name='com.netease.play:id/homecard')
@@ -116,7 +110,7 @@ def patrol(space_flag):
         time.sleep(4)
         patrol_round += 1
         print(f'patrol in {space_flag % 2}, round {patrol_round}')
-        if patrol_round > 40:
+        if patrol_round > patrol_round_time:
             return FLAG_CHANGE_SPACE
         if get_anchor_name():
             close_web_float()
@@ -125,29 +119,57 @@ def patrol(space_flag):
                 lucky_money_container.wait_for_appearance(5)
                 lucky_money_container.click()
                 print(f'find container...')
-                grap_btn = poco(name='com.netease.play:id/button')
-                grap_btn.wait_for_appearance(3)
-                if grap_btn.exists():
-                    grap_btn.click()
+                # if has followed, close record window
+                result_gold = poco(name='com.netease.play:id/resultGold')
+                time.sleep(2)
+                if result_gold.exists():
+                    print(f'has followed already, grab {result_gold.get_text()}')
+                    poco(name='com.netease.play:id/closeButton').click()
+                else:
+                    try:
+                        print(f'need to follow...')
+                        follow_btn = poco(name='com.netease.play:id/button')
+                        follow_btn.wait_for_appearance(5)
+                        if follow_btn.exists():
+                            if follow_btn.get_text().find('关注') > -1:
+                                follow_btn.click()
+                            while True:
+                                follow_btn = poco(name='com.netease.play:id/button')
+                                follow_text = follow_btn.get_text()
+                                print(f'follow text is {follow_text}')
+                                if follow_text.find('抢') > -1:
+                                    follow_btn.click()
+                                    break
+                    except PocoTargetTimeout:
+                        print('follow failed...')
 
-                while True:
-                    open_btn = poco(name='com.netease.play:id/openButton')
-                    if open_btn.exists():
-                        btn_text = open_btn.get_text()
-                        print(f'open text is {btn_text}')
-                        if btn_text.find('抢') > -1:
-                            open_btn.click(sleep_interval=2)
-                            print(f'grap over...')
+                    while True:
+                        open_btn = poco(name='com.netease.play:id/openButton')
+                        if open_btn.exists():
+                            btn_text = open_btn.get_text()
+                            print(f'open text is {btn_text}')
+                            if btn_text.find('抢') > -1:
+                                open_btn.click(sleep_interval=2)
+                                print(f'grab over...')
+                                break
+                        else:
                             break
-                    else:
-                        break
                 poco(name='com.netease.play:id/closeButton').click()
             except PocoTargetTimeout:
                 print('luckyMoneyEntryContainer not appearance,swipe to next room...')
 
-            swip_to_next(space_flag)
+            swipe_to_next(space_flag)
         else:
             return FLAG_RESTART
+
+
+def restart_app():
+    stop_app('com.netease.play')
+    start_app('com.netease.play')
+
+    update_flag = cancel_update()
+    if FLAG_RESTART == update_flag:
+        return
 
 
 if __name__ == '__main__':
@@ -156,10 +178,15 @@ if __name__ == '__main__':
     screen_height = screen_size[1]
 
     init_space = 1
+    restart_app()
     while True:
         try:
-            flag = patrol(init_space)
+            flag = patrol(init_space, patrol_round_time=20)
             if FLAG_CHANGE_SPACE == flag:
-                init_space += 1
+                print(f'back to home...')
+                keyevent(keyname='BACK')
+            elif FLAG_RESTART == flag:
+                restart_app()
+            init_space += 1
         except PocoTargetTimeout:
             print(f'PocoTargetTimeout....')

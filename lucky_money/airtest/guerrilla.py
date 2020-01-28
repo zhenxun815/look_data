@@ -15,7 +15,7 @@ from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 
 auto_setup(__file__,
            devices=[
-                   "Android://127.0.0.1:5037/127.0.0.1:21513?cap_method=JAVACAP^&^&ori_method=ADBORI",
+                   "Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP^&^&ori_method=ADBORI",
            ])
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
@@ -143,24 +143,23 @@ def patrol(space_flag, patrol_round_time):
                                 if follow_text.find('抢') > -1:
                                     follow_btn.click()
                                     break
-                    except PocoTargetTimeout:
+                    except(PocoTargetTimeout, PocoException):
                         print('follow btn not appear...')
-                    except PocoException:
-                        print('follow and grab failed...')
 
                     while True:
                         open_btn = poco(name='com.netease.play:id/openButton')
                         if open_btn.exists():
                             btn_text = open_btn.get_text()
-                            print(f'open text is {btn_text}')
+                            # print(f'open text is {btn_text}')
                             if btn_text.find('抢') > -1:
                                 open_btn.click(sleep_interval=2)
-                                print(f'grab over...')
+                                grab_result = poco(name='com.netease.play:id/resultGold').get_text()
+                                print(f'grab over...{grab_result}')
                                 break
                         else:
                             break
                 poco(name='com.netease.play:id/closeButton').click()
-            except PocoTargetTimeout:
+            except (PocoTargetTimeout, PocoNoSuchNodeException):
                 print('luckyMoneyEntryContainer not appearance,swipe to next room...')
 
             swipe_to_next(space_flag)

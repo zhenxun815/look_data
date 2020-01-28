@@ -16,7 +16,7 @@ from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 
 auto_setup(__file__,
            devices=[
-                   "Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP^&^&ori_method=ADBORI",
+                   "Android://127.0.0.1:5037/127.0.0.1:21513?cap_method=JAVACAP^&^&ori_method=ADBORI",
            ])
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
@@ -107,10 +107,8 @@ def grab(lucky_money_container=None):
                     except PocoTargetTimeout:
                         print('resultGold not appearance...')
                         return FLAG_RESTART
-        except PocoTargetTimeout:
+        except(PocoTargetTimeout, PocoNoSuchNodeException):
             print('openButton not appearance...')
-        except PocoNoSuchNodeException:
-            print('openButton not found...')
 
     except PocoTargetTimeout:
         print('luckyMoneyEntryContainer not appearance...')

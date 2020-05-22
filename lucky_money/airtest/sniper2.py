@@ -16,7 +16,7 @@ from poco.drivers.android.uiautomation import AndroidUiautomationPoco
 
 auto_setup(__file__,
            devices=[
-                   "Android:///?cap_method=javacap&touch_method=adb",
+                   "Android://127.0.0.1:5037/127.0.0.1:21503?cap_method=JAVACAP^&^&ori_method=ADBORI",
            ])
 poco = AndroidUiautomationPoco(use_airtest_input=True, screenshot_each_action=False)
 
@@ -31,7 +31,7 @@ anchor = None
 def close_web_float():
     web_close_btn = poco(name='com.netease.play:id/webviewPendant').child(name='com.netease.play:id/closeBtn')
     try:
-        web_close_btn.wait_for_appearance(timeout=8)
+        web_close_btn.wait_for_appearance(timeout=2)
         web_close_btn.click()
         print('web view float close...')
     except PocoTargetTimeout:
@@ -146,7 +146,7 @@ def to_listen():
         listen.click()
         print('to listen...')
     except PocoTargetTimeout:
-        print('listen not appearance...')
+        print('listen not appearance..z.')
         return FLAG_RESTART
 
 

@@ -124,12 +124,12 @@ if __name__ == '__main__':
     RANK_TYPE_DATE = 1
     RANK_TYPE_WEEK = 2
     RANK_TYPE_MONTH = 3
-    aim = 'KLyn'
-    test_aim = '炫迈'
+    aim = 'RRenata'
+    test_aim = '浮梦若泪'
     test_url = 'https://look.163.com/live?id=173539365'
 
-    wd = common_utils.init_driver()
-    listen_room_urls = anchor_collect.collect_anchor_rooms(2, 500, wd)
+    wd = common_utils.init_driver(headless=False)
+    listen_room_urls = anchor_collect.collect_anchor_rooms(1, 500, wd)
     finder = Finder(wd)
     room_aims_to_check, try_again_urls = check_all_room(finder, listen_room_urls, aim, rank_type=RANK_TYPE_WEEK)
 

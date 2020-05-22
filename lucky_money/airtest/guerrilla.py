@@ -53,7 +53,7 @@ def cancel_update():
     print('start cancel update version')
     try:
         update_notice = poco(name='com.netease.play:id/updateVersionBgImage')
-        update_notice.wait_for_appearance(60)
+        update_notice.wait_for_appearance(10)
         keyevent(keyname='BACK')
         print('update version canceled...')
         return FLAG_UPDATE_CANCEL
@@ -139,9 +139,13 @@ def patrol(space_flag, patrol_round_time):
                             while True:
                                 follow_btn = poco(name='com.netease.play:id/button')
                                 follow_text = follow_btn.get_text()
-                                print(f'follow text is {follow_text}')
+                                # print(f'follow text is {follow_text}')
                                 if follow_text.find('抢') > -1:
-                                    follow_btn.click()
+                                    follow_btn.click(sleep_interval=2)
+                                    grab_result = poco(name='com.netease.play:id/resultGold').get_text()
+                                    print(f'grab over...{grab_result}')
+
+
                                     break
                     except(PocoTargetTimeout, PocoException):
                         print('follow btn not appear...')
